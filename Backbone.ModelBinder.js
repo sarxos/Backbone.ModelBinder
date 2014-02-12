@@ -11,7 +11,7 @@
         factory(_, jQuery, Backbone);
     }
 }(function(_, $, Backbone){
-
+c
     if(!Backbone){
         throw 'Please include Backbone.js before Backbone.ModelBinder.js';
     }
@@ -478,7 +478,7 @@
 
         _throwException: function(message){
             if(this._options.suppressThrows){
-                if(console && console.error){
+                if(typeof(console) !== 'undefined' && console.error){
                     console.error(message);
                 }
             }
