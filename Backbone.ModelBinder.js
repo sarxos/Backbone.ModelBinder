@@ -344,6 +344,10 @@
             for (elementBindingCount = 0; elementBindingCount < attributeBinding.elementBindings.length; elementBindingCount++) {
                 elementBinding = attributeBinding.elementBindings[elementBindingCount];
 
+                if (!elementBinding.boundEls) {
+                	break;
+                }
+
                 for (boundElCount = 0; boundElCount < elementBinding.boundEls.length; boundElCount++) {
                     boundEl = elementBinding.boundEls[boundElCount];
 
